@@ -1,5 +1,5 @@
 <h2 class="story-title">{{ include.title }}</h2>
 <p><i>{{ include.date | date_to_string}}</i></p>
-<p class="story-content">
-<embed src="{{ include.source_dir | append: include.source }}">
-</p>
+<div class="story-content">
+<embed type="text/html" class="story-content" src="{{ include.source_dir | append: include.source }}">
+</div>
