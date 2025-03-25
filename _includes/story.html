@@ -2,7 +2,6 @@
   <h2 class="story-title">{{ include.title }}</h2>
   <p><i>{{ include.date | date_to_string}}</i></p>
   <div>
-    {% capture text_content %}{% include {{ include.source_dir | append: include.source }} %}{% endcapture %}
-    {{ text_content | markdownify}}
+    {{ include.content | markdownify }}
   </div>
 </div>
