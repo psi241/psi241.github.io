@@ -4,16 +4,12 @@ title: Blog
 style_file: ../assets/css/stories.css
 ---
 
-<ul>
     {% for story in site.stories %}
-    <li>
         {%
             include story.html
             title=story.title
             date=story.date
-            source_dir="../stories_content/"
+            source_dir="/stories_content/"
             source=story.source
         %}
-    </li>
     {% endfor %}
-</ul>

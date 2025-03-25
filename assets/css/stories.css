@@ -1,13 +1,24 @@
+.story-container {
+    border: 2px black;
+    background-color: aquamarine;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 200px;
+    padding: 5%;
+}
+
 .story-title {
     border: 2px black;
     color: red;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: palegoldenrod;
 }
 
 .story-content {
     border: 2px black;
     color: rgb(0, 255, 55);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: palegoldenrod;
 }
 
 .main-content {

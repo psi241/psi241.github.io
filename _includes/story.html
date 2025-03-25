@@ -1,5 +1,8 @@
-<h2 class="story-title">{{ include.title }}</h2>
-<p><i>{{ include.date | date_to_string}}</i></p>
-<div class="story-content">
-<embed type="text/html" class="story-content" src="{{ include.source_dir | append: include.source }}">
+<div class="story-container">
+  <h2 class="story-title">{{ include.title }}</h2>
+  <p><i>{{ include.date | date_to_string}}</i></p>
+  <div>
+    {% capture text_content %}{% include {{ include.source_dir | append: include.source }} %}{% endcapture %}
+    {{ text_content | markdownify}}
+  </div>
 </div>
