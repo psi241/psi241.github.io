@@ -1,0 +1,15 @@
+.story-title {
+    border: 2px black;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.story-content {
+    border: 2px black;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+    color: greenyellow;
+}

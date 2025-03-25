@@ -1,0 +1,6 @@
+# general
+.DS_Store
+# Jekyll: jekyllrb.com/docs/structure/
+_site/
+.jekyll-cache/
+.jekyll-metadata

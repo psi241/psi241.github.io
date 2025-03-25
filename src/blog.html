@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+---
+
+<ul>
+    {% for story in site.stories %}
+    <li>
+        {%
+            include story.html
+            title=story.title
+            date=story.date
+            source_dir="../stories_content/"
+            source=story.source
+        %}
+    </li>
+    {% endfor %}
+</ul>
