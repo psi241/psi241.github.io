@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href={{page.style_file}} />
+    <link rel="stylesheet" href="../assets/css/navigation.css">
   </head>
   <body>
-    {% include navigation.html %}
+    <div >{% include navigation.html %}</div>
     <div>{{content}}</div>
   </body>
 </html>
