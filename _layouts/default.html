@@ -9,9 +9,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href={{page.style_file}} />
     <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
   </head>
   <body>
-    <div >{% include navigation.html %}</div>
-    <div>{{content}}</div>
+    <div class = "h-screen">
+      <nav class="w-full bg-lime-200 flex-row p-2 h-(--navbar-height) fixed">
+        {% include navigation.html %}
+      </nav>
+      <div class="bg-red-100 w-screen pt-10 justify-items-center overflow-scroll min-h-full">
+          <div class="w-9/10 bg-purple-400 min-w-3xs p-10">
+      {{content}}
+          </div>
+      </div>
+    </div>
   </body>
 </html>

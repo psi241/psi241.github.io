@@ -7,6 +7,4 @@
 .navbar-item {
     flex: auto;
     flex-direction: row;
-    text-align: center;
-    font-family: 'Arial';
 }
