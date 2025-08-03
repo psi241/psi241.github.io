@@ -1,11 +1,10 @@
-<div class="bg-teal-100 ml-5 mr-5 min-w-3xs p-1/20">
-  <div  class="bg-yellow-200 p-2">
-    <h2 class="text-xl">{{ include.title }}</h2>
-  <p><i>{{ include.date | date_to_string}}</i></p>
+<div class="ml-5 mr-5 min-w-3xs p-1/20 border-y-3 border-y-purple-500">
+  <div  class="p-2">
+    <h2 class="text-xl noto-sans-header border-b-2 border-y-purple-300 border-y-(length:50) pb-2">{{ include.title }}</h2>
+    <p class="pt-2 noto-sans-date">{{ include.date | date_to_string}}</p>
   </div>
   
-  <div class="p-2">
-    
+  <div class="p-2 noto-sans-body">
     {{ include.content | markdownify }}
   </div>
 </div>

@@ -1,24 +1,36 @@
-@theme {
-  --font-arial: "Arial", sans-serif; 
-  --navbar-height: 40pt;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .roboto-header {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
 }
 
-
-.noto-sans-font {
+.noto-sans-header {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto-sans-date {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto-sans-body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
