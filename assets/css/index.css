@@ -36,6 +36,18 @@
     "wdth" 100;
 }
 
+a {
+  color: darkmagenta;
+}
+
+a:hover {
+  color: MediumPurple;
+}
+
+a:visited {
+  color: indigo;
+}
+
 .main-content {
     color: blue;
 }
