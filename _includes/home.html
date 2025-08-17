@@ -17,18 +17,32 @@
     </div>
 
     <div>
-        <h2 class="text-xl noto-sans-body">
-            Experience
+        <h2 class="text-xl noto-sans-h2">
+            Experiences
         </h2>
+        <div class = "grid grid-cols-[135px_1fr] noto-sans-body">
+            {% for exp in site.data.exp %}
+                <span>{{ exp.date }}</span>
+                <span>{{ exp.name }}</span>
+                <span></span>
+                <span>
+                    <ul class = "list-disc ml-5">
+                        {% for line in exp.description %}
+                            <li>{{ line }}</li>
+                        {% endfor %}
+                    </ul>
+                </span>
+            {% endfor %}
+        </div>
     </div>
 
     <div>
-        <h2 class="text-xl noto-sans-body">
-            Publications
+        <h2 class="text-xl noto-sans-h2">
+            <b>Publications</b>
         </h2>
     </div>
 
     <p class = "mt-20">
-        <i>Last update: August 4, 2025</i>
+        <i>Last update: August 17, 2025</i>
     </p>
 </div>
