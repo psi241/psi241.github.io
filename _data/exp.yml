@@ -1,0 +1,29 @@
+--- # Summer 2025
+- name: Undergraduate Researcher
+  date: Jun - Aug 2025
+  organization: Massachusetts Institute of Technology
+  location: Cambridge, MA
+  description: 
+    - Research in Computational Geometry
+- name: Lab Assistant
+  date: Feb - May 2025
+  organization: Massachusetts Institute of Technology, Introduction to Machine Learning (6.390)
+  location: Cambridge, MA
+  description: 
+    - Facilitated discussion and provided feedback on students' work and understanding of concepts during the class' lab hours
+    - Assisted students with questions about course materials and homework
+
+- name: Software Engineer Internship
+  date: Jun - Jul 2024
+  organization: Agoda Services Co., Ltd.
+  location: Bangkok, Thailand
+  description: 
+    - Back-end development using Kotlin and Gradle build tools.
+
+- name: Undergraduate Researcher
+  date: Feb - May 2024
+  organization: Massachusetts Institute of Technology
+  location: Cambridge, MA
+  description: 
+    - Research in Computational Complexity
+    - Published a paper to a conference
