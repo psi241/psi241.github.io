@@ -1,4 +1,4 @@
---- # Summer 2025
+--- # Experiences to list on the homepage
 - name: Undergraduate Researcher
   date: Jun - Aug 2025
   organization: Massachusetts Institute of Technology
@@ -27,3 +27,17 @@
   description: 
     - Research in Computational Complexity
     - Published a paper to a conference
+
+- name: Brewster Robotics Team Member
+  date: Dec 2022 - Feb 2023
+  organization: Brewster Academy
+  location: Wolfeboro, NH
+  description:
+    - Member of the school robotics to compete in First Tech Challenge
+
+- name: Thailand Online Mathematical Olympiad Organizer
+  date: 2021 - 2023
+  organization: 
+  location: Bangkok, Thailand (Remote)
+  description: 
+    - Co-organizer of mathematical olympiad-style online competitions
