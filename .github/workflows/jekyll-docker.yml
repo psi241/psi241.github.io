@@ -10,17 +10,15 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+      
     steps:
-      - name: Set up Ruby
+    - uses: actions/checkout@v4
+    - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4' # or latest stable
-      - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
-
-    steps:
-    - uses: actions/checkout@v4
+    - name: Install dependencies
+      run: bundle install --jobs 4 --retry 3
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
