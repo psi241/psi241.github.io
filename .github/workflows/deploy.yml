@@ -2,10 +2,9 @@
 name: Deploy
 
 on:
-  pull_request:
-    branches: [ "main" ]
-    types: closed
-  page_build:
+  push:
+    branches:
+      - 'main'
 
 jobs:
   call-workflow:
