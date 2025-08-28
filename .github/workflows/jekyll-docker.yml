@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.4' # or latest stable
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.4'
     - name: Install dependencies
       run: bundle install --jobs 4 --retry 3
     - name: Build the site in the jekyll/builder container
