@@ -1,14 +1,14 @@
 # Code based on https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages#linking-separate-build-and-deploy-jobs
-name: Build
+name: Deploy
 
 on:
   pull_request:
     branches: [ "main" ]
 
 jobs:
+  call-workflow:
+    uses: psi241/psi241.github.io/.github/workflows/build.yml@v1
   deploy:
-    call-workflow:
-        uses: psi241/psi241.github.io/.github/workflows/build.yml@v1
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
