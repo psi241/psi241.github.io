@@ -1,4 +1,5 @@
 # Code based on https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages#linking-separate-build-and-deploy-jobs
+# and https://github.com/actions/deploy-pages?tab=readme-ov-file
 name: Deploy
 
 on:
@@ -10,6 +11,9 @@ jobs:
   call-workflow:
     uses: psi241/psi241.github.io/.github/workflows/build.yml@main
   deploy:
+    permissions:
+        pages: write      
+        id-token: write   
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
