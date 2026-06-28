@@ -1,63 +1,58 @@
-<div class = "flex flex-col gap-y-8">
+<div class="flex flex-col gap-y-12">
     <div>
-        <div>
-        <h1 class = "text-2xl noto-sans-header mt-3 mb-3">
-            Nithid Anchaleenukoon 
-            </br>
-            <span class = "text-sm mt-5 flex-row gap-[10pt]">
-                <a class= "mx-1" href = "mailto:nithidan@mit.edu" target = "_blank">Email</a>
-                <a class= "mx-1" href = "https://www.linkedin.com/in/nithid-anchaleenukoon-0815b8320" target = "_blank">LinkedIn</a>
-                <a class= "mx-1" href = "https://github.com/psi241" target = "_blank">Github</a>
+        <div class="bg-gradient-to-bl from-[var(--color-light-violet)] to-[var(--color-light-purple)] to-70% from-10% p-8 rounded-2xl shadow-sm">
+            <h1 class="text-2xl noto-sans-header mb-4">Nithid Anchaleenukoon </h1>
+            <span class="text-sm mt-5 flex-row gap-[10pt]">
+                <a class="mx-1 hover:underline" href="mailto:nithidan@mit.edu" target="_blank">Email</a>
+                <a class="mx-1 hover:underline" href="www.linkedin.com/in/nithid-anchaleenukoon-0815b8320" target="_blank">LinkedIn</a>
+                <a class="mx-1 hover:underline" href="https://github.com/psi241" target="_blank">Github</a>
             </span>
-        </h1>
-       
+            <p class="w-2/3 max-w-[600px] noto-sans-body mt-4">
+                I am a third-year undergraduate student at Massachusetts Institute of Technology majoring in Computer Science and Engineering (Course 6-3). My interest includes machine learning and theoretical computer science. I'm also interested in discrete mathematics and neuroscience.
+            </p>
+            <p class="mt-20 noto-sans-body italic text-sm">
+                Last update: 27 June, 2026
+            </p>
         </div>
-        <p class="w-2/3 max-w-150 noto-sans-body">
-        I am a third-year undergraduate student at Massachusetts Institute of Technology majoring in Computer Science and Engineering (Course 6-3). My interest includes machine learning and theoretical computer science. I'm also interested in discrete mathematics and neuroscience.
-        </p>
-
-        <p class = "mt-20 noto-sans-body">
-        <i>Last update: August 17, 2025</i>
-    </p>
     </div>
 
-    <!-- More Info -->
-    <hr class="border-1"/> 
     <div>
-        <h2 class="text-xl noto-sans-h2">
-            Experiences
-        </h2>
-        <div class = "grid grid-cols-[180px_1fr] noto-sans-body">
-            {% for exp in site.data.exp %}
-                <span>{{ exp.date }}</span>
-                <span>{{ exp.name }}</span>
-                <span class = "text-sm">{{ exp.location }}</span>
-                <span class = "text-sm italic">{{ exp.organization }}</span>
-                <span></span>
-                <span>
-                    <ul class = "list-disc ml-8 text-sm">
-                        {% for line in exp.description %}
-                            <li>{{ line }}</li>
-                        {% endfor %}
-                    </ul>
-                </span>
-            {% endfor %}
+        <h2 class="text-xl noto-sans-h2 mb-4">Experiences</h2>
+        <div class="bg-gradient-to-br from-[var(--color-light-green)] to-[var(--color-light-dark-green)] p-8 rounded-2xl shadow-sm">
+            <div class="grid grid-cols-[180px_1fr] gap-y-2 noto-sans-body">
+                {% for exp in site.data.exp %}
+                    <span>{{ exp.date }}</span>
+                    <span class="font-bold">{{ exp.name }}</span>
+                    <span class="text-sm text-gray-600">{{ exp.location }}</span>
+                    <span class="text-sm italic">{{ exp.organization }}</span>
+                    <span></span>
+                    <span class="mb-4">
+                        <ul class="list-disc ml-8 text-sm space-y-1">
+                            {% for line in exp.description %}
+                                <li>{{ line }}</li>
+                            {% endfor %}
+                        </ul>
+                    </span>
+                {% endfor %}
+            </div>
         </div>
     </div>
 
-     <hr class="border-1/2"/> 
     <div>
-        <h2 class="text-xl noto-sans-h2">
-            Publications
-        </h2>
-        <div class = "noto-sans-body">
-            {% for entry in site.data.publications %}
-                <div class = "ml-8">
-                    <a href="{{ entry.url }}"><b>{{ entry.title }}</b></a>
-                </div>
-                <div class = "ml-8">{{ entry.authors }}</div>
-                <div class = "ml-8 italic">{{ entry.published }}</div>
-            {% endfor %}
+        <h2 class="text-xl noto-sans-h2 mb-4">Publications</h2>
+        <div class="bg-gradient-to-br from-emerald-50 to-teal-100 p-8 rounded-2xl shadow-sm">
+            <div class="noto-sans-body space-y-6">
+                {% for entry in site.data.publications %}
+                    <div class="ml-4">
+                        <a href="{{ entry.url }}" class="hover:text-teal-800 transition-colors">
+                            <b class="text-lg">{{ entry.title }}</b>
+                        </a>
+                        <div class="text-gray-700 text-sm">{{ entry.authors }}</div>
+                        <div class="italic text-sm text-gray-500">{{ entry.published }}</div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
+
 </div>
