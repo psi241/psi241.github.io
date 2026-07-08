@@ -24,7 +24,26 @@
                     <span>{{ exp.date }}</span>
                     <span class="font-bold">{{ exp.name }}</span>
                     <span class="text-sm text-gray-600">{{ exp.location }}</span>
-                    <span class="text-sm italic">{{ exp.organization }}</span>
+                    <span class="text-sm">
+                        <span class="font-medium">{{ exp.organization }}</span> <br>
+                        {% for tag in exp.tags %}
+                            {% assign tag_info = site.data.tags[tag.category][tag.key]["name"] %}
+                            {% assign tag_color = site.data.tags[tag.category][tag.key]["color"] %}
+                            {% if tag.category == 'jobs' %}
+                                <span class="text-xs text-white bg-[{{ tag_color }}] px-2 py-0.5 rounded font-semibold">
+                                    {{ tag_info }}
+                                    <!-- {{ tag_color }} -->
+                                </span>
+                                
+                            {% elsif tag.category == 'subjects' %}
+                                <span class="text-xs bg-[{{ tag_color }}] px-2 py-0.5 font-semibold rounded">
+                                     {{ tag_info }}
+                                     <!-- {{ tag_color }} -->
+                                </span>
+                            {% else %}
+                            {% endif %}
+                        {% endfor %}
+                    </span>
                     <span></span>
                     <span class="mb-4">
                         <ul class="list-disc ml-8 text-sm space-y-1">
