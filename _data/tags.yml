@@ -1,0 +1,29 @@
+subjects:
+  theorycs: 
+    name: "📝 Theory CS"
+    color: "#fae48f"
+  ml: 
+    name: "🗂️ ML"
+    color: "#8ffacf"
+  se: 
+    name: "💻 Software"
+    color: "#70d5ff"
+  ai:
+    name: "🤖 AI"
+    color: "#9bceff"
+  neuro: 
+    name: "🧠 Neurosci"
+    color: "#b8ffc3"
+  comp: 
+    name: "🧮 Computational"
+    color: "#33fff5"
+  math: 
+    name: "📘 Math"
+    color: "#eaf48f"
+jobs:
+  teaching: 
+    name: "📚 Teaching"
+    color: "#128C54"
+  research:
+    name: "🔬 Research"
+    color: "#8A2BE2"
