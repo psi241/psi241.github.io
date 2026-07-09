@@ -28,10 +28,10 @@
   organization: Massachusetts Institute of Technology, Introduction to Machine Learning (6.390)
   location: Cambridge, MA
   tags: 
-    - category: "jobs"
-      key: teaching
     - category: "subjects"
       key: ml
+    - category: "jobs"
+      key: teaching
   description: 
     - Facilitated discussion and provided feedback on students' work and understanding of concepts during the class' lab hours
     - Assisted students with questions about course materials and homework
@@ -61,10 +61,10 @@
   organization: Massachusetts Institute of Technology
   location: Cambridge, MA
   tags: 
-    - category: "jobs"
-      key: research
     - category: "subjects"
       key: theorycs
+    - category: "jobs"
+      key: research
   description: 
     - Research in Computational Complexity
     - Published a paper to a conference
